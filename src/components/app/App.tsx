@@ -6,7 +6,7 @@ function App() {
   const numb = 12;
   const arr = [1, 2, 3, 4, 4, numb];
   const Boolean = true;
-  const object = { firstName: "Dmitrii", lastName: "Ivanov", userArr: arr };
+  const object = { firstName: "Dmitrii", lastName: "Zverev", userArr: arr };
 
   /// work with string
 
@@ -17,7 +17,15 @@ function App() {
 
   console.log(object);
 
-  return <div className="App">{string}</div>;
+  return (
+    <main className="App">
+      <h1>Учебник по Front-end</h1>
+      <div>
+        <h2>Отличие null и undefined</h2>
+        <p>let x; console.log(x); // выводит undefined</p>
+      </div>
+    </main>
+  );
 }
 
 export default App;
